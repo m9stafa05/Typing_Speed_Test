@@ -253,14 +253,14 @@ function categorizeLevels(array) {
 }
 categorizeLevels(allArrays);
 // ----------------------------------------------
-console.log("Level 1 (Easy):", wLevel_1);
-console.log(wLevel_1.length);
-console.log("Level 2 (Medium):", wLevel_2);
-console.log(wLevel_2.length);
-console.log("Level 3 (Hard):", wLevel_3);
-console.log(wLevel_3.length);
-console.log("Level 4 (Very Hard):", wLevel_4);
-console.log(wLevel_4.length);
+// console.log("Level 1 (Easy):", wLevel_1);
+// console.log(wLevel_1.length);
+// console.log("Level 2 (Medium):", wLevel_2);
+// console.log(wLevel_2.length);
+// console.log("Level 3 (Hard):", wLevel_3);
+// console.log(wLevel_3.length);
+// console.log("Level 4 (Very Hard):", wLevel_4);
+// console.log(wLevel_4.length);
 
 // ###################################################
 
