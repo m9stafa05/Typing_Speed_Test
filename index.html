@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesomwe -->
+    <link rel="stylesheet" href="Css/all.min.css" />
+    <!-- rener all elment -->
+    <link rel="stylesheet" href="Css/normalis.css" />
+    <!-- main tempalate style -->
+    <link rel="stylesheet" href="Css/style.css" />
+    <!-- title logo -->
+    <link rel="website icon" type="png" href="Images/typing.png" />
+    <!-- google font -->
+    <!-- 1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kay+Pho+Du:wght@400;500;600;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+    <!-- 2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kay+Pho+Du:wght@400;500;600;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- 3 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kay+Pho+Du:wght@400;500;600;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+    <title>Typing Speed Test Game</title>
+</head>
+
+<body>
+    <div class="game">
+        <div class="name">
+            Typing Speed Test Game
+        </div>
+        <div class="container">
+            <!--Start Padge-->
+            <div class="chose-level">
+                <h2>Chose Level</h2>
+                <form action="">
+                    <button type="button" class="easy" value="Esay">Esay</button>
+                    <button type="button" class="normal" value="Normal">Normal</button>
+                    <button type="button" class="hard" value="Hard">Hard</button>
+                    <button type="button" class="Very_Hard" value="Very_Hard">Very_Hard</button>
+                </form>
+            </div>
+            <div class="level-info">
+                <div class="inf">
+                    <div class="ball gren"></div>
+                    <p>On Esay Level Word Contains 4 Letters Or Less</p>
+                </div>
+                <div class="inf">
+                    <div class="ball yell"></div>
+                    <p>On Normal Level Word Letters Between [4 - 6]</p>
+                </div>
+                <div class="inf">
+                    <div class="ball rdd"></div>
+                    <p>On Hard Level Word Letters Between [6 - 8]</p>
+                </div>
+                <div class="inf">
+                    <div class="ball rddd"></div>
+                    <p>On Very Hard Level Word Contains 8 Letters Or More</p>
+                </div>
+            </div>
+            <div class="message">
+                You Are Playing On
+                <span class="lv1"></span> Level & You Have <span class="seconds"></span> Seconds To Write The word
+            </div>
+            <div class="the-word"></div>
+            <input type="text" title="input" class="input">
+            <div class="upcoming-words">Words Will Show Here</div>
+            <div class="control">
+                <div class="time">Time Left : <span></span> Seconds</div>
+                <div class="score">Score : <span class="got">0</span> From <span class="total"></span></div>
+            </div>
+            <div class="start">Start Playing</div>
+            <div class="finsh"></div>
+        </div>
+        <script src="main.js"></script>
+</body>
+
+</html>

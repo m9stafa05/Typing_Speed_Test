@@ -1,0 +1,341 @@
+/* Start globel rules */
+:root {
+  --main-color: #2156f3;
+  --main-color-alt: #;
+  --main-transition: 0.3s;
+  --main-padding: 20px;
+  --secition-background: #eee;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Kay Pho Du", serif;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.game {
+  background-color: var(--secition-background);
+  min-height: 100vh;
+}
+
+.container {
+  margin: auto;
+  max-width: 990px;
+  position: relative;
+}
+
+/* Start Bar */
+.name {
+  background-color: var(--main-color);
+  color: white;
+  padding: var(--main-padding);
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Start  Chose level */
+.message {
+  background-color: white;
+  padding: var(--main-padding);
+  margin: 20px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 7px;
+}
+
+.message span {
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+.chose-level h2 {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.chose-level form {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  margin: 15px auto;
+}
+
+.chose-level button {
+  padding: 15px 20px;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  box-shadow: 0px 1px 3px #424040;
+  transition: var(--main-transition);
+  cursor: pointer;
+}
+
+.chose-level .easy {
+  background-color: #037003;
+}
+
+.chose-level .easy:hover {
+  background-color: #008500;
+}
+
+.chose-level .normal {
+  background-color: #ab7002;
+}
+
+.chose-level .normal:hover {
+  background-color: #c28501;
+}
+
+.chose-level .hard {
+  background-color: #ea3700;
+}
+
+.chose-level .hard:hover {
+  background-color: #f93a00;
+}
+
+.chose-level .Very_Hard {
+  background-color: #bf0404;
+}
+
+.chose-level .Very_Hard:hover {
+  background-color: #a40000;
+}
+
+@media (max-width: 768px) {
+  .chose-level form {
+    flex-direction: column;
+  }
+}
+
+@media (max-width:676px) {
+  .chose-level form {
+    flex-direction: column;
+    height: 300px;
+  }
+}
+
+/* End chose level */
+/* Start Level Info */
+.level-info {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px auto 0;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.level-info .inf {
+  padding: 20px;
+  /* margin: 20px auto; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.level-info .inf .ball {
+  width: 60px;
+  height: 60px;
+  margin: 0 15px;
+  border-radius: 50%;
+}
+
+.level-info .inf .ball.gren {
+  background-color: #008500;
+}
+
+.level-info .inf .ball.yell {
+  background-color: #c28501;
+}
+
+.level-info .inf .ball.rdd {
+  background-color: #ea3700;
+}
+
+.level-info .inf .ball.rddd {
+  background-color: #a40000;
+}
+
+.level-info .inf p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.start {
+  text-align: center;
+  background-color: var(--main-color);
+  padding: var(--main-padding);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 20px auto;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 3px #424040;
+  transition: var(--main-transition);
+}
+
+.start:hover {
+  background-color: #0905db;
+  box-shadow: 0px 0px 3px #424040;
+}
+
+.the-word {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: var(--main-color);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  filter: drop-shadow(4px 4px 2px var(--main-color));
+}
+
+.input {
+  display: block;
+  margin: 15px 0;
+  width: 100%;
+  padding: 10px 5px;
+  border: 2px solid var(--main-color);
+  text-align: center;
+  font-size: 20px;
+  font-family: "Kay Pho Du", serif;
+  font-weight: bold;
+  text-transform: capitalize;
+  border-radius: 6px;
+}
+
+.input:focus {
+  border: 2px solid var(--main-color);
+  box-shadow: 0px 0px 3px #1613b5;
+  outline: none;
+  /* background: linear-gradient(rgb(165, 160, 160), rgb(111, 111, 119)), 
+  padding-box, linear-gradient(45deg,red, blue); */
+}
+
+.upcoming-words {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 15px 0;
+  flex-wrap: wrap;
+  border-radius: 10px;
+}
+
+.upcoming-words div {
+  margin: 4px;
+  background-color: var(--main-color);
+  padding: 8px 10px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.control {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: var(--main-padding);
+}
+
+.control span {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+.finsh {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  padding: var(--main-padding);
+}
+
+.finsh .good {
+  color: green;
+  filter: drop-shadow(4px 4px 2px green);
+}
+
+.finsh .bad {
+  color: red;
+  filter: drop-shadow(4px 4px 2px red);
+}
+
+.btn-restart {
+  text-align: center;
+  padding: var(--main-padding) 40px;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  margin: 60px auto;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: var(--main-transition);
+  box-shadow: 0px 0px 3px #424040;
+  background-color: var(--main-color);
+}
