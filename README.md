@@ -1,3 +1,5 @@
+## AS A FrontEnd Project
+
 # Typing Speed Test
 Welcome to the Typing Speed Test web application! This tool allows users to measure and improve their typing speed and accuracy in a fun, interactive way.
 
