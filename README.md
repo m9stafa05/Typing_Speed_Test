@@ -4,7 +4,7 @@
 Welcome to the Typing Speed Test web application! This tool allows users to measure and improve their typing speed and accuracy in a fun, interactive way.
 
 <h1>Live Preview</h1>
-[https://m9stafa05.github.io/Typing_Speed_Test/](https://typing-speed-test-one-ruby.vercel.app/)
+https://typing-speed-test-one-ruby.vercel.app/
 
 <h2>Features</h2>
 <ul>
