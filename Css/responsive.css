@@ -1,0 +1,174 @@
+/* =============================
+   Typing Speed Test - Responsive Stylesheet
+   =============================
+   - All device-specific and media query rules
+   - No base, color, or animation rules here
+   ============================= */
+
+/* ========== 1. Responsive Container & Layout ========== */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 1rem 0.5rem;
+    gap: 1.5rem;
+  }
+  .chose-level form {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+}
+@media (max-width: 676px) {
+  .chose-level form {
+    flex-direction: column;
+    height: 300px;
+  }
+}
+
+/* ========== 2. Typography Scaling ========== */
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+  .container {
+    gap: 1.2rem;
+    padding: 1rem 0.2rem;
+  }
+  .game {
+    border-radius: 0.7rem;
+    padding: 1rem 0.2rem;
+  }
+  .name {
+    font-size: 1.3rem;
+  }
+  .the-word {
+    font-size: 1.3rem;
+  }
+  .input {
+    font-size: 1rem;
+    padding: 0.5em 0.7em;
+  }
+  .level-info .inf {
+    padding: 0.5em;
+    font-size: 0.95em;
+  }
+  .upcoming-words {
+    font-size: 0.95em;
+    padding: 0.4em;
+  }
+  .start,
+  .btn-restart {
+    font-size: 1rem;
+    padding: 0.7em 1.2em;
+  }
+}
+
+/* ========== 3. Tablet Styles ========== */
+@media (min-width: 481px) and (max-width: 767px) {
+  html {
+    font-size: 15px;
+  }
+  .game {
+    padding: 1.2rem 0.5rem;
+  }
+  .name {
+    font-size: 1.7rem;
+  }
+  .the-word {
+    font-size: 1.5rem;
+  }
+}
+
+/* ========== 4. Small Laptops/Tablets ========== */
+@media (min-width: 768px) and (max-width: 1023px) {
+  html {
+    font-size: 16px;
+  }
+  .game {
+    padding: 2rem 1rem;
+  }
+  .name {
+    font-size: 2rem;
+  }
+  .the-word {
+    font-size: 1.8rem;
+  }
+}
+
+/* ========== 5. Desktops ========== */
+@media (min-width: 1024px) and (max-width: 1199px) {
+  html {
+    font-size: 17px;
+  }
+  .game {
+    padding: 2.5rem 2rem;
+  }
+  .name {
+    font-size: 2.2rem;
+  }
+  .the-word {
+    font-size: 2.1rem;
+  }
+}
+
+/* ========== 6. Large Screens ========== */
+@media (min-width: 1200px) {
+  html {
+    font-size: 18px;
+  }
+  .game {
+    max-width: 100%;
+    width: 100%;
+    padding: 3rem 2.5rem;
+  }
+  .name {
+    font-size: 2.5rem;
+  }
+  .the-word {
+    font-size: 2.3rem;
+  }
+}
+
+/* ========== 7. Hide Scrollbars for Upcoming Words on Mobile ========== */
+@media (max-width: 480px) {
+  .upcoming-words {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+  }
+  .upcoming-words::-webkit-scrollbar {
+    display: none; /* Chrome/Safari/Webkit */
+  }
+}
+
+/* ========== 8. Navbar Responsive (if used in future) ========== */
+@media (max-width: 768px) {
+  .navbar .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 1em;
+    background: #fff;
+    flex-direction: column;
+    gap: 1em;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 1em 2em;
+    border-radius: 0.7em;
+    z-index: 100;
+  }
+  .navbar .nav-links.active {
+    display: flex;
+  }
+  .navbar .hamburger {
+    display: flex;
+  }
+}
