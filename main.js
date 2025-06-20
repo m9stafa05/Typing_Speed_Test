@@ -330,17 +330,29 @@ input.onpaste = function () {
 //                            Start Game
 //###################################################################
 startButton.onclick = function () {
-  this.remove();
-  input.focus();
-  // Generate Word Function
-  genworde();
+  document.querySelector('.loading-spinner').style.display = 'block';
+  setTimeout(() => {
+    document.querySelector('.loading-spinner').style.display = 'none';
+    this.remove();
+    input.focus();
+    genworde();
+  }, 1000); // 1 second loading
 };
+
+// Animate word change with fade-out/fade-in
+function animateWordChange(newWord) {
+  theWord.style.transition = 'opacity 0.25s cubic-bezier(.4,0,.2,1)';
+  theWord.style.opacity = 0;
+  setTimeout(() => {
+    theWord.innerHTML = newWord;
+    theWord.style.opacity = 1;
+  }, 250);
+}
 
 function genworde() {
   let randomWord = words[Math.floor(Math.random() * words.length)];
-  // console.log( words.length)
-  // Append The word
-  theWord.innerHTML = randomWord;
+  // Animate the word change
+  animateWordChange(randomWord);
   // Get word Index
   let wordIndex = words.indexOf(randomWord);
   // Remove From Array
@@ -416,3 +428,16 @@ function startplay() {
 function load() {
   location.reload();
 }
+
+// Ripple effect for all buttons
+document.querySelectorAll('button').forEach(btn => {
+  btn.addEventListener('click', function (e) {
+    const circle = document.createElement('span');
+    circle.className = 'ripple';
+    const rect = btn.getBoundingClientRect();
+    circle.style.left = `${e.clientX - rect.left}px`;
+    circle.style.top = `${e.clientY - rect.top}px`;
+    btn.appendChild(circle);
+    setTimeout(() => circle.remove(), 600);
+  });
+});
